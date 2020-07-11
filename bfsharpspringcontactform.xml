@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.5" method="upgrade" group="system">
+	<name>System - SharpSpring Plugin for contact forms by BrainforgeUK</name>
+	<creationDate>July 2020</creationDate>
+	<version>1.0.0</version>
+	<author>Jonathan Brain</author>
+	<authorEmail>brainforge.uk@btinternet.com</authorEmail>
+	<authorUrl>https://www.brainforge.co.uk</authorUrl>
+	<copyright>Copyright (C) 2020 Jonathan Brain - All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="bfsharpspringcontactform">bfsharpspringcontactform.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<config>
+		<fields
+				name="params"
+		>
+			<fieldset
+					name="basic">
+				<field
+						name="account"
+						type="text"
+						required="true"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ACCOUNT_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ACCOUNT_DESC"
+						hint="**********"
+				/>
+				<field
+						name="postback"
+						type="text"
+						required="true"
+						default="/MzawMLEwMDI1BAA/"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_POSTBACK_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_POSTBACK_DESC"
+						class="input-xlarge"
+				/>
+			</fieldset>
+
+			<fieldset
+					name="com_contact"
+					label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_CONTACT_LABEL"
+					description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_CONTACT_DESC"
+			>
+				<field
+						name="contactformid"
+						type="text"
+						default="contact-form"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_FORMID_LABEL"
+				/>
+				<field
+						name="contactendpoint"
+						type="text"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ENDPOINT_LABEL"
+						hint="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+						class="input-xlarge"
+				/>
+			</fieldset>
+
+			<fieldset
+					name="com_hikashop"
+					label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_HIKASHOP_LABEL"
+					description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_HIKASHOP_DESC"
+			>
+				<field
+						name="hikashopformid"
+						type="text"
+						default="hikashop_contact_form"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_FORMID_LABEL"
+				/>
+				<field
+						name="hikashopendpoint"
+						type="text"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ENDPOINT_LABEL"
+						hint="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+						class="input-xlarge"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
