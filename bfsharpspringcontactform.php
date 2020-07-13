@@ -27,7 +27,7 @@ class plgSystemBfsharpspringcontactform extends CMSPlugin
 			return;
 		}
 
-		$account = trim($this->params->get('account'));
+		$ssformscript = trim($this->params->get('ssformscript'));
 		$postback = trim($this->params->get('postback'));
 
 		switch($app->input->get('option'))
@@ -53,7 +53,7 @@ class plgSystemBfsharpspringcontactform extends CMSPlugin
 				break;
 		}
 
-		if (empty($account) || empty($postback) || empty($formid) || empty($endpoint))
+		if (empty($ssformscript) || empty($postback) || empty($formid) || empty($endpoint))
 		{
 			return;
 		}
@@ -73,12 +73,12 @@ class plgSystemBfsharpspringcontactform extends CMSPlugin
 		}
 	
 		var __ss_noform = __ss_noform || [];
-		__ss_noform.push(["baseURI", "https://app-' . $account . '.marketingautomation.services/webforms/receivePostback' . $postback . '"]);
+		__ss_noform.push(["baseURI", "' . $postback . '"]);
 		__ss_noform.push(["form", "' . $formid . '", "' . $endpoint . '"]);
 		__ss_noform.push(["submitType", "manual"]);
 	}
 </script>
-<script type="text/javascript" src="https://koi-' . $account . '.marketingautomation.services/client/noform.js?ver=1.24" ></script>
+<script type="text/javascript" src="' . $ssformscript . '" ></script>
 ';
 
 		$body = $app->getBody();

@@ -23,21 +23,22 @@
 			<fieldset
 					name="basic">
 				<field
-						name="account"
+						name="ssformscript"
 						type="text"
 						required="true"
-						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ACCOUNT_LABEL"
-						description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_ACCOUNT_DESC"
-						hint="**********"
+						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_SSFORMSCRIPT_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_SSFORMSCRIPT_DESC"
+						hint="https://koi-**********.marketingautomation.services/client/noform.js?ver=1.24"
+						class="input-xxlarge"
 				/>
 				<field
 						name="postback"
 						type="text"
 						required="true"
-						default="/MzawMLEwMDI1BAA/"
 						label="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_POSTBACK_LABEL"
 						description="PLG_SYSTEM_BFSHARPSPRINGCONTACTFORM_POSTBACK_DESC"
-						class="input-xlarge"
+						hint="https://app-**********.marketingautomation.services/webforms/receivePostback/MzawMLEwMDI1BAA/"
+						class="input-xxlarge"
 				/>
 			</fieldset>
 
