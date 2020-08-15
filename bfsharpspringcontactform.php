@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    SharpSpring plugin for contact forms by Brainforge
+ * @package    SharpSpring plugin for contact forms by BrainforgeUK
  * @author    https://www.brainforge.co.uk
  * @copyright  (C) 2020 Jonathan Brain. All rights reserved.
  * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
